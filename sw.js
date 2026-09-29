@@ -1,9 +1,9 @@
 // Only bundled app files are cached. Personal entries stay in localStorage.
 const scope = self.registration.scope;
 const PREFIX = `kindly-shell-${encodeURIComponent(new URL(scope).pathname)}:`;
-const CACHE = `${PREFIX}v3.0.0`;
+const CACHE = `${PREFIX}v4.0.0`;
 const FILES = ['./','./index.html','./styles.css','./app.js','./core.js',
-  './views.js','./training.js','./guide.js','./content.js','./streak.js','./pwa.js','./flame.svg','./manifest.webmanifest',
+  './cloud-config.js','./cloud.js','./account.js','./supabase.js','./recovery.js','./views.js','./training.js','./guide.js','./content.js','./streak.js','./pwa.js','./flame.svg','./manifest.webmanifest',
   './icon-192.png','./icon-512.png','./maskable-512.png','./apple-touch-icon.png'];
 const assets = new Set(FILES.map(file => new URL(file, scope).href));
 
